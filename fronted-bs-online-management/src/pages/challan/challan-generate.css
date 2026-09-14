@@ -1,0 +1,247 @@
+/* === General Layout === */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fb;
+}
+
+.container {
+  /* padding: 40px; */
+  /* color: #1c1c1e; */
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #7c7c7c;
+  margin-bottom: 30px;
+}
+
+.form-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.form-box,
+.preview-box {
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.double {
+  display: flex;
+  gap: 15px;
+}
+
+/* === Inputs & Selects === */
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 22px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  background-color: #fff;
+  color: #1c1c1e;
+  appearance: none;
+}
+
+/* Custom dropdown arrow */
+select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+  padding-right: 40px;
+}
+
+/* === Registration Number with Search Icon === */
+.search-group {
+  position: relative;
+}
+
+.search-group input {
+  width: 100%;
+  padding-right: 40px; /* space for icon */
+}
+
+.search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #8f9ecf;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.search-icon:hover {
+  color: #6f80b5;
+}
+
+/* === Generate Challan Button === */
+.generate-btn {
+  width: 100%;
+  background-color: #8f9ecf;
+  color: #fff;
+  padding: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.generate-btn:hover {
+  background-color: #43718f;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+}
+
+.generate-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* === Placeholder Preview Box === */
+.preview-placeholder {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #79859e;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* === Detailed Challan (Image-like) === */
+.challan {
+  background-color: white;
+  padding: 20px;
+  border: 2px dashed #333;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  margin-top: 15px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.challan .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.challan .subtitle {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.challan .details p {
+  margin: 3px 0;
+}
+
+.challan .fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.challan .fee-table th,
+.challan .fee-table td {
+  border: 1px solid #000;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.challan .total-row {
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
+
+.challan .signature-section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* === Animated Challan Preview Box === */
+.challan-preview {
+  border: 2px solid #8f9ecf;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #f5f7ff;
+  font-size: 14px;
+  color: #1c1c1e;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.challan-preview h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+.challan-preview p {
+  margin: 5px 0;
+}
+
+.challan-preview hr {
+  margin: 10px 0;
+  border: 1px dashed #8f9ecf;
+}
+
+/* === Fade-in Animation === */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.download-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #198754;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #146c43;
+}

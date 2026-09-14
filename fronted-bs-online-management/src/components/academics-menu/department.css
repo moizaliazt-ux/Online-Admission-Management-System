@@ -1,0 +1,181 @@
+/* ===== Department Section ===== */
+.department-section {
+  padding: 3rem 2rem;
+  background: #f9fafb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center; /* Center everything inside */
+}
+
+.department-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #222;
+  border-left: none; /* Removed left border */
+  display: inline-block;
+  position: relative;
+}
+
+.department-section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 8px auto 0;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #4f46e5, transparent);
+}
+
+/* ===== Program Grid ===== */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-content: center;   /* Center grid */
+  max-width: 1200px;
+  margin: 0 auto;            /* Keep centered */
+}
+
+/* ===== Program Card ===== */
+.program-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  padding: 1.8rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: left;
+}
+
+.program-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.program-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.program-title .icon {
+  margin-right: 10px;
+  color: inherit;
+  font-size: 1.4rem;
+}
+
+/* ===== Badge Group (Years + Seats) ===== */
+.badge-group {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 5px rgba(79,70,229,0.15);
+}
+
+.icon-sm {
+  font-size: 1rem;
+  color: #4f46e5;
+}
+
+/* ===== Program Description ===== */
+.program-desc {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* ===== Extra Sections (Eligibility + Careers) ===== */
+.program-extra {
+  margin-bottom: 1rem;
+}
+
+.program-extra h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.program-extra ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.program-extra li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.program-extra li::before {
+  content: "✔";
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* ===== Buttons ===== */
+.btn-group {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+  transform: scale(1.05);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+}
+
+.btn-outline:hover {
+  background: #eef2ff;
+  transform: scale(1.05);
+}
+
+/* ===== Department Color Themes ===== */
+.science .program-title { color: #2563eb; }
+.arts .program-title { color: #db2777; }
+.commerce .program-title { color: #059669; }

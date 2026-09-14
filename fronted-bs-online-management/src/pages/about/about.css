@@ -1,0 +1,209 @@
+/* src/components/about/about.css */
+
+.about-section {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #f9fafc, #eef5ff);
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading Styles */
+.about-section h2,
+.about-section h3,
+.about-section h4 {
+  font-weight: 700;
+  color: #022c43;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #036674;
+  padding-left: 12px;
+}
+
+.about-section h3 {
+  font-size: 1.6rem;
+  margin: 1.5rem 0 1rem;
+  color: #034a59;
+}
+
+.about-section h4 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #036674;
+}
+
+/* Text */
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+}
+
+.stat-card h3 {
+  font-size: 1.8rem;
+  color: #036674;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+  color: #555;
+}
+
+/* Timeline */
+.timeline {
+  margin: 2rem 0;
+  border-left: 3px solid #036674;
+  padding-left: 1.5rem;
+}
+
+.timeline-item {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "●";
+  position: absolute;
+  left: -22px;
+  color: #036674;
+  font-size: 1.2rem;
+}
+
+.timeline-item h4 {
+  margin: 0;
+  color: #022c43;
+}
+
+.timeline-item p {
+  margin: 0.3rem 0 0.8rem;
+  color: #555;
+}
+
+/* Facilities Grid */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.facility-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: left;
+  border-left: 5px solid #036674;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.facility-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.facility-card h4 {
+  margin-bottom: 0.4rem;
+  color: #034a59;
+}
+
+/* Leadership Section */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.leader-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-8px);
+}
+
+.leader-card h4 {
+  margin-top: 0.8rem;
+  color: #022c43;
+}
+
+.leader-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Contact Info */
+.contact-info {
+  margin: 2rem 0;
+  background: #036674;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.contact-info h3 {
+  color: white;
+}
+
+.contact-info p {
+  margin: 0.3rem 0;
+}
+
+/* Core Values */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.value-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  background: #036674;
+  color: white;
+  transform: scale(1.05);
+}
+
+.value-card h4 {
+  margin-bottom: 0.3rem;
+}

@@ -1,0 +1,118 @@
+/* Admissions Page Styling */
+.admissions-container {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: #f1f5f9; /* soft slate bg */
+  min-height: 100vh;
+  padding: 2rem;
+  color: #1e293b; /* dark gray text */
+}
+
+/* ===== Header ===== */
+.admissions-container .header-card {
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.admissions-container .header-card h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.admissions-container .header-card p {
+  font-size: 1.1rem;
+  color: #e2e8f0; /* light gray text */
+}
+
+/* ===== Admission Cards ===== */
+.admissions-container .admission-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.admissions-container .admission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.admissions-container .admission-card-header {
+  background: #036674;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* ===== Buttons ===== */
+.admissions-container .apply-btn {
+  background: #036674;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+.admissions-container .apply-btn:hover {
+  background: #024e59;
+  transform: scale(1.05);
+}
+
+.admissions-container .prospectus-btn {
+  background: #f97316; /* orange */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+.admissions-container .prospectus-btn:hover {
+  background: #d45b08;
+  transform: scale(1.05);
+}
+
+/* ===== Accordion ===== */
+.admissions-container .admission-accordion .accordion-button {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.admissions-container .admission-accordion .accordion-body {
+  background: #f9fafb;
+  border-left: 4px solid #036674;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* ===== Contact Card ===== */
+.admissions-container .contact-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.admissions-container .contact-header {
+  background: #004e92;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 16px 16px 0 0;
+}
+
+.admissions-container .contact-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}

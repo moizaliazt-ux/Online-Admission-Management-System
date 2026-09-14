@@ -1,0 +1,48 @@
+import * as Yup from "yup";
+
+const initialValues = {
+  fname: "",
+  middleName: "",
+  lname: "",
+  fatherName: "",
+  cnic: "",
+  fCnic: "",
+  gender: "",
+  dob: "",
+  phone: "",
+  email: "",
+  address1: "",
+  address2: "",
+  city: "",
+  state: "",
+  country: "",
+  picture: null,
+  qualification: "",
+  board: "",
+  year: "",
+  program: "",
+  shift: "",
+  meritScore: 0,
+};
+
+const validationSchema = Yup.object().shape({
+  fname: Yup.string().required("First name is required"),
+  lname: Yup.string().required("Last name is required"),
+  fatherName: Yup.string().required("Father's name is required"),
+  cnic: Yup.string().required("CNIC is required"),
+  gender: Yup.string().required("Gender is required"),
+  dob: Yup.string().required("Date of Birth is required"),
+  phone: Yup.string().required("Phone number is required"),
+  email: Yup.string().email("Invalid email").required("Email is required"),
+  address1: Yup.string().required("Address Line 1 is required"),
+  city: Yup.string().required("City is required"),
+  country: Yup.string().required("Country is required"),
+  picture: Yup.mixed().required("Passport photo is required"),
+  qualification: Yup.string().required("Qualification is required"),
+  board: Yup.string().required("Board/University is required"),
+  year: Yup.string().required("Year of Passing is required"),
+  program: Yup.string().required("Program selection is required"),
+  shift: Yup.string().required("Shift selection is required"),
+  meritScore: Yup.string().required("percentage is required"),
+});
+export { validationSchema, initialValues };
